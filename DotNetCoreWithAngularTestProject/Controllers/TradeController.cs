@@ -26,7 +26,7 @@ namespace DotNetCoreWithAngularTestProject.Controllers
         }
 
         // GET: api/Trade/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet, Route("getTradeById/{id}")]
         public Trade Get(int id)
         {
             return _service.GetById(id);

@@ -32,6 +32,7 @@ namespace DotNetCoreWithAngularTestProject
             });
 
             services.AddSingleton<ITradeService, TradeService>();
+            services.AddTransient<ILevelService, LevelService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

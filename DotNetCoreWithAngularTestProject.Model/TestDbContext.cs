@@ -18,5 +18,6 @@ namespace DotNetCoreWithAngularTestProject.Model
             optionsBuilder.UseSqlServer(ConnectionString);
         }
         public virtual DbSet<Trade> Trade { get; set; }
+        public virtual DbSet<Level> Level { get; set; }
     }
 }
