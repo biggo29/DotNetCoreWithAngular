@@ -24,7 +24,7 @@ namespace DotNetCoreWithAngularTestProject.Controllers
         {
             return _service.GetList();
         }
-        // GET: api/Level/GetListByTradeId
+        // GET: api/Level/GetListByTradeId/1
         [HttpGet, Route("GetListByTradeId/{id}")]
         public IEnumerable<Level> GetListByTradeId(int Id)
         {
