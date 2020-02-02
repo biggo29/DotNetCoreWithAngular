@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWithAngularTestProject", "DotNetCoreWithAngularTestProject\DotNetCoreWithAngularTestProject.csproj", "{2C2C82F4-AF12-4467-A86C-5EEC86BF250D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWithAngularTestProject.Model", "DotNetCoreWithAngularTestProject.Model\DotNetCoreWithAngularTestProject.Model.csproj", "{344FAD74-6789-4377-AF4E-02AF7B2E0219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWithAngularTestProject.DAL", "DotNetCoreWithAngularTestProject.DAL\DotNetCoreWithAngularTestProject.DAL.csproj", "{DBD5E5AC-57EF-4821-9D4B-1C916EC556E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWithAngularTestProject.Interface", "DotNetCoreWithAngularTestProject.Interface\DotNetCoreWithAngularTestProject.Interface.csproj", "{9F89FED5-C2B5-49C2-BFB6-0848CDACE441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWithAngularTestProject.Service", "DotNetCoreWithAngularTestProject.Service\DotNetCoreWithAngularTestProject.Service.csproj", "{A3E8E1D4-03A7-4D9F-9C15-507D7035D143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C2C82F4-AF12-4467-A86C-5EEC86BF250D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2C82F4-AF12-4467-A86C-5EEC86BF250D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2C82F4-AF12-4467-A86C-5EEC86BF250D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2C82F4-AF12-4467-A86C-5EEC86BF250D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{344FAD74-6789-4377-AF4E-02AF7B2E0219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344FAD74-6789-4377-AF4E-02AF7B2E0219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344FAD74-6789-4377-AF4E-02AF7B2E0219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344FAD74-6789-4377-AF4E-02AF7B2E0219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBD5E5AC-57EF-4821-9D4B-1C916EC556E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD5E5AC-57EF-4821-9D4B-1C916EC556E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD5E5AC-57EF-4821-9D4B-1C916EC556E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD5E5AC-57EF-4821-9D4B-1C916EC556E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F89FED5-C2B5-49C2-BFB6-0848CDACE441}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F89FED5-C2B5-49C2-BFB6-0848CDACE441}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F89FED5-C2B5-49C2-BFB6-0848CDACE441}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F89FED5-C2B5-49C2-BFB6-0848CDACE441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E8E1D4-03A7-4D9F-9C15-507D7035D143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E8E1D4-03A7-4D9F-9C15-507D7035D143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E8E1D4-03A7-4D9F-9C15-507D7035D143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E8E1D4-03A7-4D9F-9C15-507D7035D143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A956B54C-3811-4649-AF3E-AF0057884D00}
+	EndGlobalSection
+EndGlobal

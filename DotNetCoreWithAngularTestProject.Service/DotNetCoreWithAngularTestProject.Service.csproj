@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreWithAngularTestProject.DAL\DotNetCoreWithAngularTestProject.DAL.csproj" />
+    <ProjectReference Include="..\DotNetCoreWithAngularTestProject.Interface\DotNetCoreWithAngularTestProject.Interface.csproj" />
+    <ProjectReference Include="..\DotNetCoreWithAngularTestProject.Model\DotNetCoreWithAngularTestProject.Model.csproj" />
+  </ItemGroup>
+
+</Project>
