@@ -6,7 +6,7 @@ namespace DotNetCoreWithAngularTestProject.Model
 {
     public class ListTable
     {
-        public int listId { get; set; }
+        public int listTableId { get; set; }
         public int tradeId { get; set; }
         public int levelId { get; set; }
         public string syllabusName { get; set; }

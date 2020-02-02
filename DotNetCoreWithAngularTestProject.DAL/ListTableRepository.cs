@@ -36,7 +36,7 @@ namespace DotNetCoreWithAngularTestProject.DAL
             using (TestDbContext _context = new TestDbContext())
             {
                 ListTable ListTable = new ListTable();
-                ListTable = _context.ListTable.FirstOrDefault(i => i.listId == Id);
+                ListTable = _context.ListTable.FirstOrDefault(i => i.listTableId == Id);
 
                 return ListTable;
             }
@@ -46,7 +46,7 @@ namespace DotNetCoreWithAngularTestProject.DAL
         {
             using (TestDbContext _context = new TestDbContext())
             {
-                if (ListTable.listId == 0)
+                if (ListTable.listTableId == 0)
                 {
                     _context.Add(ListTable);
                 }
@@ -59,11 +59,11 @@ namespace DotNetCoreWithAngularTestProject.DAL
             }
         }
 
-        public bool Iduplicate(ListTable ListTable)
+        public bool Iduplicate(ListTable listTable)
         {
             using (TestDbContext _context = new TestDbContext())
             {
-                if (_context.ListTable.Where(i => i.syllabusName == ListTable.syllabusName && i.listId != ListTable.listId).ToList().Count > 0)
+                if (_context.ListTable.Where(i=>i.listTableId != listTable.listTableId).ToList().Count > 0)
                 {
                     return true;
                 }
@@ -79,7 +79,7 @@ namespace DotNetCoreWithAngularTestProject.DAL
         {
             using (TestDbContext _context = new TestDbContext())
             {
-                var ListTable = _context.ListTable.FirstOrDefault(i => i.listId == Id);
+                var ListTable = _context.ListTable.FirstOrDefault(i => i.listTableId == Id);
                 if (ListTable != null)
                 {
                     _context.Remove(ListTable);

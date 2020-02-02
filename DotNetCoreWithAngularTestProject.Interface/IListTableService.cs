@@ -11,7 +11,7 @@ namespace DotNetCoreWithAngularTestProject.Interface
         List<Trade> GetTradeList();
         List<Level> GetLevelListByTradeId(int Id);
         ListTable GetById(int Id);
-        ListTable Save(ListTable ListTable);
+        ListTable Save(ListTable listTable);
         //bool Iduplicate(ListTable ListTable);
         bool Delete(int Id);
     }

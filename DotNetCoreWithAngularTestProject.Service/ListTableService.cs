@@ -29,16 +29,16 @@ namespace DotNetCoreWithAngularTestProject.Service
             ListTableRepository repo = new ListTableRepository();
             return repo.GetById(Id);
         }
-        public ListTable Save(ListTable ListTable)
+        public ListTable Save(ListTable listTable)
         {
             ListTableRepository repo = new ListTableRepository();
-            if (repo.Iduplicate(ListTable))
+            if (repo.Iduplicate(listTable))
             {
                 return new ListTable();
             }
             else
             {
-                return repo.Save(ListTable);
+                return repo.Save(listTable);
             }
         }
         public bool Delete(int Id)
