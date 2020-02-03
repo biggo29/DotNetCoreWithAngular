@@ -1,0 +1,20 @@
+<p>
+  Trade works!
+</p>
+<div>
+  <h1 id="tableLabel">Trade Data <button class="btn btnprimary"
+    (click)="add()">Create New</button></h1>
+    <p *ngIf="!employeeList"><em>Loading...</em></p>
+</div>
+<div>
+  <p>{{tradeList | json}}</p>
+  <p>This component submits data to the server.</p>
+  <table class='table table-striped' aria-labelledby="tableLabel">
+    <tbody>
+      <tr *ngFor="let item of tradeList">
+        <td>{{item.tradeId}}</td>
+        <td>{{item.tradeName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
