@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DotNetCoreWithAngularTestProject.Interface;
 using DotNetCoreWithAngularTestProject.Model;
+using DotNetCoreWithAngularTestProject.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -46,10 +47,19 @@ namespace DotNetCoreWithAngularTestProject.Controllers
             return _listTableService.GetById(id);
         }
         // POST: api/ListTable
-        [HttpPost]
-        public ActionResult Post([FromBody] ListTable listTable)
+        [HttpPost, DisableRequestSizeLimit]
+        public ActionResult Post()
         {
-            return Ok(_listTableService.Save(listTable));
+            //var fileObject = listTableFileUpload.file;
+            
+            if (Request.Form.Files["fileName"]!=null) 
+            {
+                var file = Request.Form.Files["fileName"];
+     
+            }
+
+            return Ok();
+            //return Ok(_listTableService.Save());
         }
 
         //// PUT: api/ListTable/5

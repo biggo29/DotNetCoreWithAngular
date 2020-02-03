@@ -1,3 +1,100 @@
-<p>
-  ListTable works!
-</p>
+<div class="container">
+  <h1>List Form</h1>
+  <form>
+    <!-- <p>{{ListTableForm |json }}</p> -->
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label>Select Trade</label>
+        <select class="form-control" (change)="loadGLevelListByTradeId()" [(ngModel)]="ListTableForm.tradeId" name="ListTableForm.tradeId" id="ListTableForm.tradeId"> 
+          <option *ngFor="let opt of listOfTrades" [value]="opt.tradeId">{{opt.tradeName}}</option>
+        </select>
+      </div>
+      <!-- <p>{{listOfLevelByTradeId |json }}</p> -->
+     
+      <div class="form-group col-sm-6">
+        <label>Select Level</label>
+        <select class="form-control" [(ngModel)]="ListTableForm.levelId" name="ListTableForm.levelId" id="ListTableForm.levelId"> 
+          <option *ngFor="let opt of listOfLevelByTradeId" [value]="opt.levelId">{{opt.levelName}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <label >Syllabus Name</label>
+        <input type="text" class="form-control" id="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label>Upload Syllabus </label>
+        <input type="file" [(ngModel)]="ListTableForm.file" id="ListTableForm.file" name="ListTableForm.file">   
+      </div>
+      <div class="form-group col-sm-6">
+        <label>Upload Test Plan </label>
+        <input type="file" [(ngModel)]="ListTableForm.file" id="ListTableForm.file" name="ListTableForm.file">   
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label >Development Officer</label>
+        <input type="text" class="form-control" id="">
+      </div>
+      <div class="form-group col-sm-6">
+        <label >Manager</label>
+        <input type="text" class="form-control" id="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label >Active Date</label>
+        <input type="date" class="form-control" id="">
+      </div>
+      
+    </div>
+    <div class="form-group col-sm-6">
+      <button type="submit" class="btn btn-success" (click)="addData()">Submit</button>
+    </div>
+    
+
+  </form>
+</div>
+<div class="row">
+  <div class="table-responsive"> 
+    <table class='table table-striped' aria-labelledby="tableLabel">
+      <tbody>
+        <tr>
+          <td>Action</td>
+          <!-- <td>listTableId</td> -->
+          <td>tradeId</td>
+          <td>levelId</td>
+          <td>syllabusName</td>
+          <td>syllabusFilePath</td>
+          <td>testPlanFilePath</td>
+          <td>language</td>
+          <td>developmentOfficer</td>
+          <td>manager</td>
+          <td>activeDate</td>
+          <td>modifiedBy</td>
+          <td>modifiedDate</td>
+          <td>status</td>
+        </tr>
+        <tr *ngFor="let item of listTableList">
+          <td><a href="#" class="btn btn-edit">edit</a></td>
+          <!-- <td>{{item.listTableId}}</td> -->
+          <td>{{item.tradeId}}</td>
+          <td>{{item.levelId}}</td>
+          <td>{{item.syllabusName}}</td>
+          <td>{{item.syllabusFilePath}}</td>
+          <td>{{item.testPlanFilePath}}</td>
+          <td>{{item.language}}</td>
+          <td>{{item.developmentOfficer}}</td>
+          <td>{{item.manager}}</td>
+          <td>{{item.activeDate}}</td>
+          <td>{{item.modifiedBy}}</td>
+          <td>{{item.modifiedDate}}</td>
+          <td>{{item.status}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -18,10 +18,10 @@ export class TradeComponent implements OnInit {
   }
 
   loadAllTrades(){
-    alert(this.tradeService.getAllTrade());
+    // alert(this.tradeService.getAllTrade());
     this.tradeService.getAllTrade().subscribe(
       res=>{this.tradeList = res;
-        alert("Component Hit");
+        // alert("Component Hit");
         console.log(res);
       });
   }

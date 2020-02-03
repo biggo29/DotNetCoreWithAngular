@@ -1,3 +1,6 @@
+import { Trade } from "./Trade";
+import { Level } from "./Level";
+
 export class ListTable {
     listTableId: number;
     tradeId: number;
@@ -11,5 +14,9 @@ export class ListTable {
     activeDate: string;
     modifiedBy: string;
     modifiedDate: string;
-    status: boolean
+    status: boolean;
+    trade: Trade;
+    level: Level;
+    file: File;
+    
 }
