@@ -54,7 +54,7 @@ namespace DotNetCoreWithAngularTestProject.Controllers
             
             if (Request.Form.Files["fSyllabus"] !=null) 
             {
-                var file = Request.Form.Files["fileName"];
+                var file = Request.Form.Files["fileName"]; 
      
             }
 
