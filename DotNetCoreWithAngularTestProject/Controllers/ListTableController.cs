@@ -52,7 +52,7 @@ namespace DotNetCoreWithAngularTestProject.Controllers
         {
             //var fileObject = listTableFileUpload.file;
             
-            if (Request.Form.Files["fileName"]!=null) 
+            if (Request.Form.Files["fSyllabus"] !=null) 
             {
                 var file = Request.Form.Files["fileName"];
      

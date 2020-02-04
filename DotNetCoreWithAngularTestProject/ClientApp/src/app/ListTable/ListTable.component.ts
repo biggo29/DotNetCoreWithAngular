@@ -49,9 +49,20 @@ export class ListTableComponent implements OnInit {
     );
   }
 
+  SyllabusFile(res)
+  {
+    this.ListTableForm.fileSyllabus = res[0];
+  }
+
+  TestPlanFile(res)
+  {
+    this.ListTableForm.fileTestPlan = res[0];
+  }
+
   addData(){
     //alert("submit works");
-    this.listTableService.createListTable(this.ListTableForm);
+ 
+     this.listTableService.createListTable(this.ListTableForm);
   }
 
 }

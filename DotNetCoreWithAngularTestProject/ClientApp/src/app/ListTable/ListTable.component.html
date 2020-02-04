@@ -27,11 +27,11 @@
     <div class="row">
       <div class="form-group col-sm-6">
         <label>Upload Syllabus </label>
-        <input type="file" [(ngModel)]="ListTableForm.file" id="ListTableForm.file" name="ListTableForm.file">   
+        <input type="file" (change)=SyllabusFile($event.target.files)>   
       </div>
       <div class="form-group col-sm-6">
         <label>Upload Test Plan </label>
-        <input type="file" [(ngModel)]="ListTableForm.file" id="ListTableForm.file" name="ListTableForm.file">   
+        <input type="file" (change)=TestPlanFile($event.target.files)>   
       </div>
     </div>
     <div class="row">

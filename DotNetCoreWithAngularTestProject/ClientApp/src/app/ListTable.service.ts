@@ -54,8 +54,22 @@ export class ListTableService {
         let body = {
             'text':listTable.manager
         };
-        const httpOptions = { headers: new HttpHeaders() };
-        return this.http.post(this.url+'/', body, httpOptions)
-        .pipe(map(response=>{return <any> (response as unknown)}));
+        console.log('Data');
+        console.log(listTable);
+
+        let  form =new FormData();
+        form.append("name",listTable.manager);
+        form.append("text",'Hello');
+        form.append("fSyllabus",listTable.fileSyllabus,listTable.fileSyllabus.name);
+        form.append("fTestPlan",listTable.fileTestPlan,listTable.fileTestPlan.name); //ListTableForm.fileTestPlan
+        this.http.post(this.url, form).subscribe(
+            (response) => console.log(response),
+            (error) => console.log(error)
+        )
+        alert("Submited");
+
+        // const httpOptions = { headers: new HttpHeaders() };
+        // return this.http.post(this.url+'/', body, httpOptions)
+        // .pipe(map(response=>{return <any> (response as unknown)}));
     }
 }

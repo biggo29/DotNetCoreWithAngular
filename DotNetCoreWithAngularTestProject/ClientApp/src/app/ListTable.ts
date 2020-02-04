@@ -17,6 +17,6 @@ export class ListTable {
     status: boolean;
     trade: Trade;
     level: Level;
-    file: File;
-    
+    fileSyllabus: File;
+    fileTestPlan: File;
 }
